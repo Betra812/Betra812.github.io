@@ -9,23 +9,35 @@
 <body style="background-color:powderblue;">
     <header>
         <div class="container">
-            <h1>Meie suur nali</h1>
             <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
+        .image-container {
+            position: relative;
             width: 100%;
-            background: transparent;
         }
-        .full-width-image {
+        .image-container img {
             width: 100%;
-            height: auto;
+            height: 1000;
             display: block;
+        }
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2em;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5); /* Optional: background color with transparency */
+            padding: 10px;
         }
     </style>
 </head>
 <body>
+    <div class="image-container">
+        <img src="https://cdn.discordapp.com/attachments/1030113768140709972/1245439412272107630/Snapchat-2045493629.jpg?ex=6658c157&is=66576fd7&hm=b4889863a634ce2115e47b98aedf421047c4599c49df925e33823d629dfde207&" alt="Transparent Image">
+        <div class="overlay-text">MEIE SUUR NALI</div>
+    </div>
+</body>
     <img src="https://cdn.discordapp.com/attachments/1030113768140709972/1245439412272107630/Snapchat-2045493629.jpg?ex=6658c157&is=66576fd7&hm=b4889863a634ce2115e47b98aedf421047c4599c49df925e33823d629dfde207&" alt="Transparent Image" class="full-width-image">
 </body>
         </div>
